@@ -37,4 +37,4 @@ python3 account-financing/verify.py
 
 The check needs only Python 3. It follows the amounts through nine recorded steps, compares the payer and recipient at each transfer, and checks that the refused transactions left the recorded protected accounts untouched. The original signed transactions were verified separately before publication.
 
-[All Dexter demos](../)
+[All Dexter demos](https://github.com/Dexter-DAO/demos) · [Plain text](https://raw.githubusercontent.com/Dexter-DAO/demos/main/account-financing/README.md)

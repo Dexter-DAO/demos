@@ -10,7 +10,7 @@ A supplier finishes a job. While it waits to collect, a lender sells the company
 
 The case uses test assets and Dexter's compiled programs on a local Solana runtime.
 
-[Read the case](account-financing/) · [Rust source](account-financing/rules/transfer-title.rs) · [Recorded data](account-financing/evidence.json)
+[Read the case](account-financing/README.md) · [Rust source](account-financing/rules/transfer-title.rs) · [Recorded data](account-financing/evidence.json)
 
 [Dexter](https://dexter.cash/) · [Developer documentation](https://docs.dexter.cash/docs/)
 
