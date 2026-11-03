@@ -1,0 +1,223 @@
+{
+  "schema": "dexter/account-financing/1",
+  "fixture_date": "2026-11-01",
+  "unit": "Synthetic token base units on a local Solana VM.",
+  "source_trace_sha256": "eb2998755c5f747b6f9864856a2f73f5e0a090e5702a103ac7c74c028c796a1a",
+  "claims_core_binary_sha256": "8f75f10aa40c7f800d8d4a25f66ebff5a8444da7783a0707c1ab9177e2b31f88",
+  "encoding": "Every _le entry concatenates the indicated unsigned 64-bit little-endian fields in order. Token entries pair the recorded balance before and after one transaction.",
+  "observation": "Selected events from compiled Dexter Account programs on LiteSVM. All parties, funds and jobs in this run were fixtures.",
+  "field_offsets": {
+    "FundedRun": {
+      "supplier_principal": 219,
+      "creditor": 331,
+      "ownership_revision": 395,
+      "earned_paid_le": 315,
+      "originated_outstanding_repaid_extinguished_le": 403
+    },
+    "FundingFacility": {
+      "drawn_repaid_le": 188
+    },
+    "SPL_token_account": {
+      "balance_le": 64
+    }
+  },
+  "fingerprints": "Role values hash the 32-byte fixture public keys. Each refusal digest covers the same sorted set of complete protected accounts before or after execution. The public data omits their addresses and full snapshots.",
+  "verification": "The offline check compares these extracted fields. Verifying the transaction signatures requires the original, unredacted packets.",
+  "roles": {
+    "company": "ef9f07955a3ca65faed0c92003f883ec3fce2c130b30ce7a94f52fc741041e73",
+    "supplier": "837f444eba7f28f64d41c33d9b0afb9a8502f0582c22bfa18329c64e2265646d",
+    "issuer": "d2f86fe0a2d6cd466fd4bfe687a68cc7393e45e05d1d65a9ee46d970c7991232",
+    "buyer_of_debt": "b5c699743096a0b2b881f4db51f54a397dcc22911de5a2f65b70bc208768645b",
+    "original_funder": "3a88fa28117cc18323b18fec990de7947999e437ce3b17d0bcc203c6d38f4a45"
+  },
+  "source_files_sha256": {
+    "rules/supplier-collection.rs": "f00ab75969880c05529373fcece6a08d370521fda96a76ec7c597553dbb4f0f6",
+    "rules/transfer-title.rs": "ab2db8cefb93ee7652bd4c8fb7f26655ea7753a4df030140f7f4269123f7cb90",
+    "rules/repayment.rs": "941c07acdd3242608517914f2a5026fb8847ff8339d217c105d7f0d77362afb5",
+    "rules/claim-terms.rs": "6f4a5cd6883da99d81e6983c5171f12d0d83bc637b0408dcc7a1b2e44308b304"
+  },
+  "states": [
+    {
+      "facility_drawn_repaid_le": "00000000000000000000000000000000"
+    },
+    {
+      "facility_drawn_repaid_le": "00000000000000000000000000000000",
+      "supplier_sha256": "837f444eba7f28f64d41c33d9b0afb9a8502f0582c22bfa18329c64e2265646d",
+      "creditor_sha256": "d2f86fe0a2d6cd466fd4bfe687a68cc7393e45e05d1d65a9ee46d970c7991232",
+      "ownership_revision": 1,
+      "earned_paid_le": "60ea0000000000000000000000000000",
+      "originated_outstanding_repaid_extinguished_le": "60ea00000000000060ea00000000000000000000000000000000000000000000"
+    },
+    {
+      "facility_drawn_repaid_le": "00000000000000000000000000000000",
+      "supplier_sha256": "837f444eba7f28f64d41c33d9b0afb9a8502f0582c22bfa18329c64e2265646d",
+      "creditor_sha256": "b5c699743096a0b2b881f4db51f54a397dcc22911de5a2f65b70bc208768645b",
+      "ownership_revision": 2,
+      "earned_paid_le": "60ea0000000000000000000000000000",
+      "originated_outstanding_repaid_extinguished_le": "60ea00000000000060ea00000000000000000000000000000000000000000000"
+    },
+    {
+      "facility_drawn_repaid_le": "60ea0000000000000000000000000000",
+      "supplier_sha256": "837f444eba7f28f64d41c33d9b0afb9a8502f0582c22bfa18329c64e2265646d",
+      "creditor_sha256": "b5c699743096a0b2b881f4db51f54a397dcc22911de5a2f65b70bc208768645b",
+      "ownership_revision": 2,
+      "earned_paid_le": "60ea00000000000060ea000000000000",
+      "originated_outstanding_repaid_extinguished_le": "60ea00000000000060ea00000000000000000000000000000000000000000000"
+    },
+    {
+      "facility_drawn_repaid_le": "60ea0000000000000000000000000000",
+      "supplier_sha256": "837f444eba7f28f64d41c33d9b0afb9a8502f0582c22bfa18329c64e2265646d",
+      "creditor_sha256": "b5c699743096a0b2b881f4db51f54a397dcc22911de5a2f65b70bc208768645b",
+      "ownership_revision": 2,
+      "earned_paid_le": "60ea00000000000060ea000000000000",
+      "originated_outstanding_repaid_extinguished_le": "60ea000000000000000000000000000060ea0000000000000000000000000000"
+    },
+    {
+      "facility_drawn_repaid_le": "000000000000000060ea000000000000",
+      "supplier_sha256": "837f444eba7f28f64d41c33d9b0afb9a8502f0582c22bfa18329c64e2265646d",
+      "creditor_sha256": "b5c699743096a0b2b881f4db51f54a397dcc22911de5a2f65b70bc208768645b",
+      "ownership_revision": 2,
+      "earned_paid_le": "60ea00000000000060ea000000000000",
+      "originated_outstanding_repaid_extinguished_le": "60ea000000000000000000000000000060ea0000000000000000000000000000"
+    }
+  ],
+  "events": [
+    {
+      "step": "work-earned",
+      "packet_sha256": "9f7271e155068d5dd7564a7ba2096ed897b278f5e53f0b773913413c58eac536",
+      "before": 0,
+      "after": 1,
+      "token_balances_le": {},
+      "kind": 12,
+      "gross_principal_interest_le": "60ea00000000000000000000000000000000000000000000"
+    },
+    {
+      "step": "title-sold",
+      "packet_sha256": "edc2d21c44ec873bdc17bd2e5a6d061ef632670e1d3e044ecc3c7924408f0fa5",
+      "before": 1,
+      "after": 2,
+      "token_balances_le": {
+        "issuer_sale_proceeds": "400d030000000000e8eb030000000000",
+        "fees": "00000000000000007b00000000000000",
+        "buyer_cash": "400d0300000000001d2e020000000000"
+      },
+      "kind": 17,
+      "gross_principal_interest_le": "60ea00000000000000000000000000000000000000000000",
+      "consideration_cost_old_basis_new_basis_le": "a8de0000000000007b0000000000000060ea00000000000023df000000000000",
+      "seller": "issuer",
+      "buyer": "buyer_of_debt"
+    },
+    {
+      "step": "second-sale-refused",
+      "packet_sha256": "82b4faece9611bc0c7edfdd98befba81dddf59e34cb5d11a1b9e7df042f31d30",
+      "before": 2,
+      "after": 2,
+      "token_balances_le": {},
+      "attempted_creditor": "issuer",
+      "instruction_error": [
+        0,
+        {
+          "Custom": 6045
+        }
+      ],
+      "protected_accounts": 90,
+      "before_digest": "3af46e6f6af8edeb53cdb93fc5e3a904ac0693834c9e6739fd1dbe102669da36",
+      "after_digest": "3af46e6f6af8edeb53cdb93fc5e3a904ac0693834c9e6739fd1dbe102669da36"
+    },
+    {
+      "step": "supplier-collected",
+      "packet_sha256": "aaef59b779adff9ad432773d6be8fce9aff789426475ad7f5ca721bf5a23576a",
+      "before": 2,
+      "after": 3,
+      "token_balances_le": {
+        "supplier_cash": "0000000000000000fde4000000000000",
+        "funding_cash": "15560f0000000000b56b0e0000000000",
+        "fees": "7b00000000000000b803000000000000",
+        "sponsor": "00000000000000002602000000000000"
+      },
+      "kind": 13,
+      "gross_principal_interest_le": "60ea00000000000000000000000000000000000000000000",
+      "net_fee_reimbursement_margin_le": "23e70000000000003d03000000000000f4010000000000003200000000000000"
+    },
+    {
+      "step": "old-creditor-refused",
+      "packet_sha256": "b6e7aedbbd672df10e1eeec57ab72126cfa352b715b8ab0d887108fc4aa34881",
+      "before": 3,
+      "after": 3,
+      "token_balances_le": {},
+      "attempted_creditor": "issuer",
+      "instruction_error": [
+        0,
+        {
+          "Custom": 6045
+        }
+      ],
+      "protected_accounts": 110,
+      "before_digest": "281c54ccc8f4188cc44e97c4b753b698f92b5dd1b77b86f1e637472ce1b08064",
+      "after_digest": "281c54ccc8f4188cc44e97c4b753b698f92b5dd1b77b86f1e637472ce1b08064"
+    },
+    {
+      "step": "interest-serviced",
+      "packet_sha256": "81e319b302b0793b7141f3c9560666d72f33d0bae104f7428df4d5c71ff1bb86",
+      "before": 3,
+      "after": 3,
+      "token_balances_le": {
+        "interest_fees": "00000000000000007201000000000000",
+        "issuer_cash": "400d0300000000005809030000000000",
+        "buyer_repayment": "00000000000000007602000000000000"
+      },
+      "kind": 16,
+      "gross_principal_interest_le": "e8030000000000000000000000000000e803000000000000",
+      "payer": "issuer",
+      "payee": "buyer_of_debt",
+      "interest_fee_le": "7201000000000000"
+    },
+    {
+      "step": "company-repaid",
+      "packet_sha256": "3a14a8c0996e4d7fcb443a14755db107fba74099d72aaf24cf3701eddfda5dab",
+      "before": 3,
+      "after": 4,
+      "token_balances_le": {
+        "company_cash": "32070300000000004a09020000000000",
+        "interest_fees": "7201000000000000ac08000000000000",
+        "buyer_repayment": "760200000000000024f9000000000000"
+      },
+      "kind": 16,
+      "gross_principal_interest_le": "e8fd00000000000060ea0000000000008813000000000000",
+      "payer": "company",
+      "payee": "buyer_of_debt",
+      "interest_fee_le": "3a07000000000000"
+    },
+    {
+      "step": "facility-interest-serviced",
+      "packet_sha256": "87d7674c3ef66f7b4ac4640623964d4e0eb7ebf744da617a86be9135d0540cf7",
+      "before": 4,
+      "after": 4,
+      "token_balances_le": {
+        "funding_cash": "b56b0e0000000000196c0e0000000000",
+        "issuer_cash": "5809030000000000f408030000000000"
+      },
+      "kind": 18,
+      "gross_principal_interest_le": "640000000000000000000000000000006400000000000000",
+      "payer": "issuer",
+      "payee": "original_funder",
+      "interest_fee_le": "0000000000000000"
+    },
+    {
+      "step": "issuer-repaid",
+      "packet_sha256": "f4bb758a12b4b45e7171e465679697afae937174022c29e5e1166adea61a66a1",
+      "before": 4,
+      "after": 5,
+      "token_balances_le": {
+        "funding_cash": "196c0e0000000000a85a0f0000000000",
+        "interest_fees": "ac08000000000000210b000000000000",
+        "issuer_cash": "f408030000000000f017020000000000"
+      },
+      "kind": 18,
+      "gross_principal_interest_le": "04f100000000000060ea000000000000a406000000000000",
+      "payer": "issuer",
+      "payee": "original_funder",
+      "interest_fee_le": "7502000000000000"
+    }
+  ]
+}
