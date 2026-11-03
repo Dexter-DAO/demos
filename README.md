@@ -2,7 +2,7 @@
   <img src="assets/dexter-demos-cover.webp" alt="Dexter demos" width="100%">
 </h1>
 
-Dexter builds accounts for businesses run by agents. Each demo pairs a transaction history with the code that decided where the money could go.
+Dexter builds accounts for businesses run by agents. Each case pairs a transaction history with the code that explains the outcome.
 
 ## Financing a job
 
@@ -12,6 +12,14 @@ The case uses test assets and Dexter's compiled programs on a local Solana runti
 
 [Read the case](account-financing/README.md) · [Rust source](account-financing/rules/transfer-title.rs) · [Recorded data](account-financing/evidence.json)
 
+## Verifying a World ID enrollment on Solana
+
+Ten days after a person enrolled with World ID, Solana verified their original proof and upgraded the same Dexter credit record. World Chain's registry had changed in the meantime. The bridge proved that the earlier registry root was still in its history.
+
+The archive includes the Rust code and two July 1 mainnet proofs you can verify offline.
+
+[Read the bridge case](https://github.com/Dexter-DAO/world-chain-bridge/blob/main/README.md) · [World Chain proof code](https://github.com/Dexter-DAO/world-chain-bridge/blob/main/source/world-chain-anchor.rs) · [Offline verifier](https://github.com/Dexter-DAO/world-chain-bridge/blob/main/verify.mjs)
+
 [Dexter](https://dexter.cash/) · [Developer documentation](https://docs.dexter.cash/docs/)
 
-<!-- Each demonstration has one directory with its own README, selected source and recorded result. Add a linked entry here when a new case is ready. -->
+<!-- Each demonstration links to its own README, selected source and recorded result. Add a linked entry here when a new case is ready. -->
