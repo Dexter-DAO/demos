@@ -26,7 +26,7 @@ The case uses test assets and Dexter's compiled programs on a local Solana runti
 
 ## World ID on Solana
 
-Ten days after a person enrolled with World ID, Solana verified their original proof and upgraded the same Dexter credit record. World Chain's registry had changed in the meantime. The bridge proved that the earlier registry root was still in its history.
+Dexter's bridge let Solana check the World ID registry on World Chain. Anyone could submit a proof linking Ethereum finality, the winning rollup claim and the registry's contents. A Solana credit program used that evidence to verify a person's original World ID proof and upgrade their existing account without another attestation from Dexter.
 
 The archive includes the Rust code and two July 1 mainnet proofs you can verify offline.
 
